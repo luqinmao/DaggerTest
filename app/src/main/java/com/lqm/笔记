@@ -1,0 +1,22 @@
+
+理解：
+
+GitHubService  通过 ApiModule  注入到 Component中，
+
+ApiModule 在 DemoAcomponent 类中注入
+
+ReposLiasActivity 通过  DemoApplication.component().inject(this);   把自己注入到component中
+
+这样 @Inject GitHubService gitHubService;  就可以拿到gitHubService实例了，
+    因为 ReposLiasActivity 和GitHubService 已经注入到component中了，
+    通过 @Inject  可以从 component中拿到需要的东西
+
+
+
+
+
+
+
+
+
+
